@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contáctanos | Huellas Solidarias</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let modal = document.querySelector("aside.full-modal");
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 1000);
+    });
+  </script>  
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="top-bar">
+    <div class="logo">
+      <img src="../img/Logo_Huellas.png" alt="Logo-de-Huellas-Solidarias">
+      <span>Huellas Solidarias</span>
+    </div> 
+
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="acerca-de-nosotros.html">Acerca de Nosotros</a>
+      <a href="nuestros-programas.html">Nuestros Programas</a>
+      <a href="donaciones.html">Donaciones</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1>¡Contáctanos!</h1>
+      <p>¿Tienes dudas, sugerencias o deseas unirte? ¡Escríbenos!</p>
+    </div>
+    <div class="hero-image">
+      <img src="../img/perrito-contacto.png" alt="dog" class="hero-img">
+    </div>
+  </div>
+</header>
+
+
+  <!-- FORMULARIO  MAIN -->
+  <main style="padding: 40px 20px;">
+    <form action="contacto.html" method="GET" id="formDemo" style="max-width: 600px; margin: 0 auto; background-color: white; padding: 30px; border-radius: 10px;">
+      <div>
+        <label for="txtNombre">Nombre y  Apellido:</label>
+        <input type="text" name="nombre" id="txtNombre" placeholder="Ej. Daniel Zaldivar " required />
+      </div>
+
+      <div>
+        <label for="txtEmail">Correo Electrónico:</label>
+        <input type="email" name="email" id="txtEmail" placeholder="Ej. ejemplo@correo.com" required />
+      </div>
+
+      <div>
+        <label for="txtPhone">Teléfono Celular:</label>
+        <input type="text" name="phone" id="txtPhone" placeholder="Ej. +(504) 9876-5432" required />
+      </div>
+
+      <label for="txtBio">Descripción:</label><br />
+      <textarea name="biotext" id="txtBio" placeholder="Alguna sugerencia o interés..." rows="10" maxlength="1024" cols="80"
+        required></textarea>
+      <br />
+
+<button class="btn-secondary" type="submit" name="btnSubmit">Enviar</button>
+</form>
+
+<section class="info-contacto">
+  <h2>Información de contacto</h2>
+  <p><strong>Número de Huellas Solidarias:</strong> 9467-8715</p>
+  <p><strong>Correo:</strong> huellitasunahcu@gmail.com</p>
+  <p><strong>Número de cuenta:</strong> 756752141 - Eunice Reyes</p>
+  <p><strong>Redes sociales:</strong> 
+    <i class="fab fa-instagram"></i> Instagram, 
+    <i class="fab fa-facebook"></i> Facebook, 
+    <i class="fab fa-tiktok"></i> TikTok 
+    como <em>@huellassolidariasunahcu</em>
+  </p>
+</section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+  <div class="footer-content">
+    <div class="footer-logo">Huellas Solidarias</div>
+      <a href="contacto.html">Contáctenos</a>
+      <a href="preguntas-frecuentes.html">Preguntas Frecuentes (FAQ)</a>
+      <a href="como-ayudar.html">Cómo Ayudar</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="blog.html">Blog</a>
+  </div>
+</footer>
+<aside class="full-modal">
+    <section class="center">
+      <div class="loader">&nbsp;</div>
+    </section>
+  </aside>
+</body>
+</html>
